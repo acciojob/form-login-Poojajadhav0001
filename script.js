@@ -1,11 +1,8 @@
 function getFormvalue() {
-    //Write your code here
- event.preventDefault(); // form submit थांबवतो (page reload होऊ नये म्हणून)
+      const form = document.forms[0];
 
-      // Input values घेणे
-      const firstName = document.querySelector('[name="fname"]').value.trim();
-      const lastName = document.querySelector('[name="lname"]').value.trim();
+      const firstName = form.fname.value.trim();
+      const lastName = form.lname.value.trim();
 
-	alert(fname + " " + lname);
-      
+      alert(firstName + " " + lastName);
     }
